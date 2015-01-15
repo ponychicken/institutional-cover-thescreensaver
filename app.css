@@ -41,12 +41,11 @@ h1 span.outer {
 	display: block;
 	-webkit-animation-name: moveX;
 	animation-name: moveX;
-	-webkit-animation-duration: 56s;
-	animation-duration: 56s;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	-webkit-animation-delay: -28s;
-	animation-delay: -28s;
+	/*animation-delay: -28s;*/
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
@@ -56,12 +55,11 @@ h1 span.outer {
 h1 span.inner {
 	-webkit-animation-name: moveYTop;
 	animation-name: moveYTop;
-	-webkit-animation-duration: 44s;
-	animation-duration: 44s;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	-webkit-animation-delay: -66s;
-	animation-delay: -66s;
+	/*animation-delay: -66s;*/
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
@@ -73,12 +71,11 @@ h2 span.outer {
 	display: block;
 	-webkit-animation-name: moveX;
 	animation-name: moveX;
-	-webkit-animation-duration: 44s;
-	animation-duration: 44s;
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	-webkit-animation-delay: -66s;
-	animation-delay: -66s;
+	/*animation-delay: -66s;*/
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
@@ -88,12 +85,11 @@ h2 span.outer {
 h2 span.inner {
 	-webkit-animation-name: moveYBottom;
 	animation-name: moveYBottom;
-	-webkit-animation-duration: 56s;
-	animation-duration: 56s;
+	-webkit-animation-duration: 5s;
+	animation-duration: 5s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	-webkit-animation-delay: -28s;
-	animation-delay: -28s;
+	/*animation-delay: -28s;*/
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
@@ -121,8 +117,8 @@ span.inner {
 
 @-webkit-keyframes moveX {
 	from {
-		-webkit-transform: translateX(1vw) translateX(-1%);
-		transform: translateX(1vw) translateX(-1%);
+		-webkit-transform: translateX(1vw) translateX(-1);
+		transform: translateX(1vw) translateX(-1);
 	}
 	to {
 		-webkit-transform: translateX(100vw) translateX(-100%);
@@ -133,8 +129,8 @@ span.inner {
 
 @keyframes moveX {
 	from {
-		-webkit-transform: translateX(1vw) translateX(-1%);
-		transform: translateX(1vw) translateX(-1%);
+		-webkit-transform: translateX(1vw) translateX(-1);
+		transform: translateX(1vw) translateX(-1);
 	}
 	to {
 		-webkit-transform: translateX(100vw) translateX(-100%);
@@ -166,8 +162,8 @@ span.inner {
 
 @-webkit-keyframes moveYBottom {
 	from {
-		-webkit-transform: translateY(50vh) translateY();
-		transform: translateY(50vh) translateY();
+		-webkit-transform: translateY(50vh) translateY(1%);
+		transform: translateY(50vh) translateY(1%);
 	}
 	to {
 		-webkit-transform: translateY(100vh) translateY(-100%);
@@ -177,8 +173,8 @@ span.inner {
 
 @keyframes moveYBottom {
 	from {
-		-webkit-transform: translateY(50vh) translateY();
-		transform: translateY(50vh) translateY();
+		-webkit-transform: translateY(50vh) translateY(1%);
+		transform: translateY(50vh) translateY(1%);
 	}
 	to {
 		-webkit-transform: translateY(100vh) translateY(-100%);
