@@ -36,22 +36,42 @@ h1, h2 {
 	white-space: nowrap;
 }
 
-h1 span {
+h1 span.outer {
 	position: relative;
-	animation-name: moveX, moveYTop;
-	animation-duration: 44s, 56s;
+	display: block;
+	animation-name: moveX;
+	animation-duration: 56s;
 	animation-timing-function: linear;
-	animation-delay: -66s, -28s;
+	animation-delay: -28s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
 
-h2 span {
-	position: relative;
-	animation-name: moveX, moveYBottom;
-	animation-duration: 56s, 44s;
+h1 span.inner {
+	animation-name: moveYTop;
+	animation-duration: 44s;
 	animation-timing-function: linear;
-	animation-delay: -28s, -22s;
+	animation-delay: -66s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+h2 span.outer {
+	position: relative;
+	display: block;
+	animation-name: moveX;
+	animation-duration: 44s;
+	animation-timing-function: linear;
+	animation-delay: -66s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+h2 span.inner {
+	animation-name: moveYBottom;
+	animation-duration: 56s;
+	animation-timing-function: linear;
+	animation-delay: -28s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
@@ -70,9 +90,10 @@ hr {
 	top: 50%;
 }
 
-span {
+span.inner {
 	display: inline-block;
 }
+
 
 @keyframes moveX {
 	from {

@@ -1,8 +1,8 @@
 var h1 = document.querySelector('h1');
 var h2 = document.querySelector('h2');
 
-var h1span = document.querySelector('h1 span');
-var h2span = document.querySelector('h2 span');
+var h1span = document.querySelector('h1 span span');
+var h2span = document.querySelector('h2 span span');
 
 h1span.innerHTML = coverTitle;
 h2span.innerHTML = coverSubtitle;
