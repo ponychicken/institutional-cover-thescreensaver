@@ -38,21 +38,33 @@ h1, h2 {
 
 h1 span {
 	position: relative;
+	-webkit-animation-name: moveX, moveYTop;
 	animation-name: moveX, moveYTop;
+	-webkit-animation-duration: 44s, 56s;
 	animation-duration: 44s, 56s;
+	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
+	-webkit-animation-delay: -66s, -28s;
 	animation-delay: -66s, -28s;
+	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
 	animation-direction: alternate;
 }
 
 h2 span {
 	position: relative;
+	-webkit-animation-name: moveX, moveYBottom;
 	animation-name: moveX, moveYBottom;
+	-webkit-animation-duration: 56s, 44s;
 	animation-duration: 56s, 44s;
+	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
+	-webkit-animation-delay: -28s, -22s;
 	animation-delay: -28s, -22s;
+	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
 	animation-direction: alternate;
 }
 
@@ -72,6 +84,17 @@ hr {
 
 span {
 	display: inline-block;
+}
+
+
+
+@-webkit-keyframes moveX {
+	from {
+		left: calc(0vw - 0%);
+	}
+	to {
+		left: calc(100vw - 100%);
+	}
 }
 
 
@@ -102,6 +125,17 @@ span {
 
 
 
+@-webkit-keyframes moveYTop {
+	from {
+		top: calc(0vh - 0%);
+	}
+	to {
+		top: calc(50vh - 100%);
+	}
+}
+
+
+
 @keyframes moveYTop {
 	from {
 		top: calc(0vh - 0%);
@@ -119,6 +153,15 @@ span {
 		top: calc(50vh - 100%);
 	}
 }*/
+
+@-webkit-keyframes moveYBottom {
+	from {
+		top: calc(50vh - 0%);
+	}
+	to {
+		top: calc(100vh - 100%);
+	}
+}
 
 @keyframes moveYBottom {
 	from {
