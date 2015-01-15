@@ -44,6 +44,8 @@ h1 span {
 	animation-delay: -66s, -28s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+	top: calc(25vh - 50%);
+	left: calc(50vw - 50%);
 }
 
 h2 span {
@@ -54,6 +56,8 @@ h2 span {
 	animation-delay: -28s, -22s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
+	top: calc(75vh - 50%);
+	left: calc(50vw - 50%);
 }
 
 #flexWrapper{
@@ -85,22 +89,6 @@ span {
 	}
 }
 
-/*
-@keyframes moveX {
-	from {
-		left: calc(50vw - 50%);
-	}
-	
-	50% {
-		
-	}
-	
-	to {
-		left: calc(100vw - 100%);
-	}
-}*/
-
-
 
 @keyframes moveYTop {
 	from {
@@ -111,14 +99,6 @@ span {
 	}
 }
 
-/*@keyframes moveYTop {
-	from {
-		top: calc(25vh - 0%);
-	}
-	to {
-		top: calc(50vh - 100%);
-	}
-}*/
 
 @keyframes moveYBottom {
 	from {
