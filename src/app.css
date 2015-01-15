@@ -44,7 +44,6 @@ h1 span {
 	animation-delay: -66s, -28s;
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
-	/*animation: moveX 30s linear 0s infinite alternate, moveYTop 33s linear 0s infinite alternate;*/
 }
 
 h2 span {
