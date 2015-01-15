@@ -114,9 +114,17 @@ span.inner {
 	display: inline-block;
 }
 
-.ie h2 span, .ie h1 span {
+.ie h2 span {
 	-webkit-animation-name: none;
 	animation-name: none;
+	top: calc(25vh - 50%);
+	left: calc(50vw - 50%);
+}
+.ie h1 span {
+	-webkit-animation-name: none;
+	animation-name: none;
+	top: calc(75vh - 50%);
+	left: calc(50vw - 50%);
 }
 
 @-webkit-keyframes moveX {
