@@ -14,6 +14,7 @@ body {
 	margin: 0;
 	height: 100%;
 	overflow: hidden;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1 {
@@ -37,12 +38,23 @@ h1, h2 {
 
 h1 span {
 	position: relative;
-	animation: moveX 3s linear 0s infinite alternate, moveYTop 3.3s linear 0s infinite alternate;
+	animation-name: moveX, moveYTop;
+	animation-duration: 44s, 56s;
+	animation-timing-function: linear;
+	animation-delay: -66s, -28s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	/*animation: moveX 30s linear 0s infinite alternate, moveYTop 33s linear 0s infinite alternate;*/
 }
 
 h2 span {
 	position: relative;
-	animation: moveX 3s linear 0s infinite alternate, moveYBottom 3.3s linear 0s infinite alternate;
+	animation-name: moveX, moveYBottom;
+	animation-duration: 56s, 44s;
+	animation-timing-function: linear;
+	animation-delay: -28s, -22s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 #flexWrapper{
@@ -74,6 +86,23 @@ span {
 	}
 }
 
+/*
+@keyframes moveX {
+	from {
+		left: calc(50vw - 50%);
+	}
+	
+	50% {
+		
+	}
+	
+	to {
+		left: calc(100vw - 100%);
+	}
+}*/
+
+
+
 @keyframes moveYTop {
 	from {
 		top: calc(0vh - 0%);
@@ -82,6 +111,15 @@ span {
 		top: calc(50vh - 100%);
 	}
 }
+
+/*@keyframes moveYTop {
+	from {
+		top: calc(25vh - 0%);
+	}
+	to {
+		top: calc(50vh - 100%);
+	}
+}*/
 
 @keyframes moveYBottom {
 	from {
