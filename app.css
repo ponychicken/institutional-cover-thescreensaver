@@ -41,11 +41,12 @@ h1 span.outer {
 	display: block;
 	-webkit-animation-name: moveX;
 	animation-name: moveX;
-	-webkit-animation-duration: 5s;
-	animation-duration: 5s;
+	-webkit-animation-duration: 50s;
+	animation-duration: 50s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	/*animation-delay: -28s;*/
+	-webkit-animation-delay: -25s;
+	animation-delay: -25s;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
@@ -55,11 +56,12 @@ h1 span.outer {
 h1 span.inner {
 	-webkit-animation-name: moveYTop;
 	animation-name: moveYTop;
-	-webkit-animation-duration: 4s;
-	animation-duration: 4s;
+	-webkit-animation-duration: 40s;
+	animation-duration: 40s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	/*animation-delay: -66s;*/
+	-webkit-animation-delay: -60s;
+	animation-delay: -60s;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
@@ -71,11 +73,12 @@ h2 span.outer {
 	display: block;
 	-webkit-animation-name: moveX;
 	animation-name: moveX;
-	-webkit-animation-duration: 4s;
-	animation-duration: 4s;
+	-webkit-animation-duration: 40s;
+	animation-duration: 40s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	/*animation-delay: -66s;*/
+	-webkit-animation-delay: -60s;
+	animation-delay: -60s;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
@@ -85,11 +88,12 @@ h2 span.outer {
 h2 span.inner {
 	-webkit-animation-name: moveYBottom;
 	animation-name: moveYBottom;
-	-webkit-animation-duration: 5s;
-	animation-duration: 5s;
+	-webkit-animation-duration: 50s;
+	animation-duration: 50s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	/*animation-delay: -28s;*/
+	-webkit-animation-delay: -25s;
+	animation-delay: -25s;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
