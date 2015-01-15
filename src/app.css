@@ -40,18 +40,18 @@ h1 span.outer {
 	position: relative;
 	display: block;
 	animation-name: moveX;
-	animation-duration: 56s;
+	animation-duration: 5s;
 	animation-timing-function: linear;
-	animation-delay: -28s;
+	/*animation-delay: -28s;*/
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
 
 h1 span.inner {
 	animation-name: moveYTop;
-	animation-duration: 44s;
+	animation-duration: 4s;
 	animation-timing-function: linear;
-	animation-delay: -66s;
+	/*animation-delay: -66s;*/
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
@@ -60,18 +60,18 @@ h2 span.outer {
 	position: relative;
 	display: block;
 	animation-name: moveX;
-	animation-duration: 44s;
+	animation-duration: 4s;
 	animation-timing-function: linear;
-	animation-delay: -66s;
+	/*animation-delay: -66s;*/
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
 
 h2 span.inner {
 	animation-name: moveYBottom;
-	animation-duration: 56s;
+	animation-duration: 5s;
 	animation-timing-function: linear;
-	animation-delay: -28s;
+	/*animation-delay: -28s;*/
 	animation-iteration-count: infinite;
 	animation-direction: alternate;
 }
@@ -97,7 +97,7 @@ span.inner {
 
 @keyframes moveX {
 	from {
-		transform: translateX(0) translateX(0);
+		transform: translateX(1vw) translateX(-1);
 	}
 	to {
 		transform: translateX(100vw) translateX(-100%);
@@ -106,7 +106,7 @@ span.inner {
 
 @keyframes moveYTop {
 	from {
-		transform: translateY(0) translateY(0);
+		transform: translateY(1vh) translateY(-0.5%);
 	}
 	to {
 		transform: translateY(50vh) translateY(-100%);
@@ -115,7 +115,7 @@ span.inner {
 
 @keyframes moveYBottom {
 	from {
-		transform: translateY(50vh) translateY(0);
+		transform: translateY(50vh) translateY(1%);
 	}
 	to {
 		transform: translateY(100vh) translateY(-100%);
