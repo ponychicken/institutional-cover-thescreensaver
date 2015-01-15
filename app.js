@@ -22,7 +22,7 @@ if (typeof urlVars.subtitle !== 'undefined') {
   var coverSubtitle = 'Subtitle was not passed';
 }
 
-if (window.navigator.userAgent.indexOf('MSIE') != -1) {
+if (window.navigator.userAgent.indexOf('Trident') != -1 || window.navigator.userAgent.indexOf('MSIE') != -1) {
   document.querySelector('body').classList.add('ie');
 }
 
