@@ -36,64 +36,40 @@ h1, h2 {
 	white-space: nowrap;
 }
 
-h1 span.outer {
+h1 span {
 	position: relative;
-	display: block;
-	-webkit-animation-name: moveX;
-	animation-name: moveX;
-	-webkit-animation-duration: 5s;
-	animation-duration: 5s;
+	-webkit-animation-name: moveX, moveYTop;
+	animation-name: moveX, moveYTop;
+	-webkit-animation-duration: 44s, 56s;
+	animation-duration: 44s, 56s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	/*animation-delay: -28s;*/
+	-webkit-animation-delay: -66s, -28s;
+	animation-delay: -66s, -28s;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
 	animation-direction: alternate;
+	top: calc(25vh - 50%);
+	left: calc(50vw - 50%);
 }
 
-h1 span.inner {
-	-webkit-animation-name: moveYTop;
-	animation-name: moveYTop;
-	-webkit-animation-duration: 4s;
-	animation-duration: 4s;
-	-webkit-animation-timing-function: linear;
-	animation-timing-function: linear;
-	/*animation-delay: -66s;*/
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate;
-	animation-direction: alternate;
-}
-
-h2 span.outer {
+h2 span {
 	position: relative;
-	display: block;
-	-webkit-animation-name: moveX;
-	animation-name: moveX;
-	-webkit-animation-duration: 4s;
-	animation-duration: 4s;
+	-webkit-animation-name: moveX, moveYBottom;
+	animation-name: moveX, moveYBottom;
+	-webkit-animation-duration: 56s, 44s;
+	animation-duration: 56s, 44s;
 	-webkit-animation-timing-function: linear;
 	animation-timing-function: linear;
-	/*animation-delay: -66s;*/
+	-webkit-animation-delay: -28s, -22s;
+	animation-delay: -28s, -22s;
 	-webkit-animation-iteration-count: infinite;
 	animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
 	animation-direction: alternate;
-}
-
-h2 span.inner {
-	-webkit-animation-name: moveYBottom;
-	animation-name: moveYBottom;
-	-webkit-animation-duration: 5s;
-	animation-duration: 5s;
-	-webkit-animation-timing-function: linear;
-	animation-timing-function: linear;
-	/*animation-delay: -28s;*/
-	-webkit-animation-iteration-count: infinite;
-	animation-iteration-count: infinite;
-	-webkit-animation-direction: alternate;
-	animation-direction: alternate;
+	top: calc(75vh - 50%);
+	left: calc(50vw - 50%);
 }
 
 #flexWrapper{
@@ -110,74 +86,68 @@ hr {
 	top: 50%;
 }
 
-span.inner {
+span {
 	display: inline-block;
 }
 
 
+
 @-webkit-keyframes moveX {
 	from {
-		-webkit-transform: translateX(1vw) translateX(-1);
-		transform: translateX(1vw) translateX(-1);
+		left: calc(0vw - 0%);
 	}
 	to {
-		-webkit-transform: translateX(100vw) translateX(-100%);
-		transform: translateX(100vw) translateX(-100%);
+		left: calc(100vw - 100%);
 	}
 }
+
 
 
 @keyframes moveX {
 	from {
-		-webkit-transform: translateX(1vw) translateX(-1);
-		transform: translateX(1vw) translateX(-1);
+		left: calc(0vw - 0%);
 	}
 	to {
-		-webkit-transform: translateX(100vw) translateX(-100%);
-		transform: translateX(100vw) translateX(-100%);
+		left: calc(100vw - 100%);
 	}
 }
+
 
 @-webkit-keyframes moveYTop {
 	from {
-		-webkit-transform: translateY(1vh) translateY(-0.5%);
-		transform: translateY(1vh) translateY(-0.5%);
+		top: calc(0vh - 0%);
 	}
 	to {
-		-webkit-transform: translateY(50vh) translateY(-100%);
-		transform: translateY(50vh) translateY(-100%);
+		top: calc(50vh - 100%);
 	}
 }
+
 
 @keyframes moveYTop {
 	from {
-		-webkit-transform: translateY(1vh) translateY(-0.5%);
-		transform: translateY(1vh) translateY(-0.5%);
+		top: calc(0vh - 0%);
 	}
 	to {
-		-webkit-transform: translateY(50vh) translateY(-100%);
-		transform: translateY(50vh) translateY(-100%);
+		top: calc(50vh - 100%);
 	}
 }
+
 
 @-webkit-keyframes moveYBottom {
 	from {
-		-webkit-transform: translateY(50vh) translateY(1%);
-		transform: translateY(50vh) translateY(1%);
+		top: calc(50vh - 0%);
 	}
 	to {
-		-webkit-transform: translateY(100vh) translateY(-100%);
-		transform: translateY(100vh) translateY(-100%);
+		top: calc(100vh - 100%);
 	}
 }
 
+
 @keyframes moveYBottom {
 	from {
-		-webkit-transform: translateY(50vh) translateY(1%);
-		transform: translateY(50vh) translateY(1%);
+		top: calc(50vh - 0%);
 	}
 	to {
-		-webkit-transform: translateY(100vh) translateY(-100%);
-		transform: translateY(100vh) translateY(-100%);
+		top: calc(100vh - 100%);
 	}
 }
