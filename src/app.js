@@ -1,4 +1,6 @@
-if (window.navigator.userAgent.indexOf('Trident') != -1 || window.navigator.userAgent.indexOf('MSIE') != -1) {
+if (window.navigator.userAgent.indexOf('Trident') != -1 || window.navigator.userAgent.indexOf('MSIE') != -1 || (
+  window.navigator.userAgent.indexOf('Windows') != -1 && window.navigator.userAgent.indexOf('Firefox') != -1 
+) ) {
   document.querySelector('body').classList.add('ie');
 }
 
