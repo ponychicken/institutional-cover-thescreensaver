@@ -1,3 +1,8 @@
+if (window.navigator.userAgent.indexOf('Trident') != -1 || window.navigator.userAgent.indexOf('MSIE') != -1) {
+  document.querySelector('body').classList.add('ie');
+}
+
+
 var h1 = document.querySelector('h1');
 var h2 = document.querySelector('h2');
 
